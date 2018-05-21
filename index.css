@@ -43,6 +43,8 @@ ul {
 
 li {
   margin: 0px 10px;
+  padding-right: 20px;
+  padding-top: 20px;
   list-style: none;
 }
 
@@ -75,6 +77,8 @@ li {
   margin-top: 100px;
 }
 
+/* Content */
+
 .andere-welten > .heading {
   position: relative;
   z-index: 3;
@@ -85,7 +89,7 @@ li {
 }
 
 .andere-welten > .heading .edge {
-  height: 300px;
+  height: 380px;
   width: 300px;
   background-color: white;
   box-shadow: -5px -5px 10px -3px #D80000;
@@ -132,7 +136,7 @@ li {
 }
 
 .mmm > .heading .edge {
-  height: 300px;
+  height: 420px;
   width: 320px;
   background-color: white;
   box-shadow: 5px 5px 10px -3px #E6008E;
@@ -148,6 +152,12 @@ li {
   padding-left: 20px;
 }
 
+.mmm > .heading .subtext {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+}
+
 .mmm > .image-right .edge {
   height: 300px;
   width: 800px;
@@ -160,7 +170,7 @@ li {
 }
 
 .mmm > .image-right img {
-  padding-right: 40px;
+  padding-right: 80px;
 }
 
 
@@ -175,7 +185,7 @@ li {
 }
 
 .gilde > .heading .edge {
-  height: 300px;
+  height: 430px;
   width: 300px;
   background-color: white;
   box-shadow: -5px 5px 10px -3px #4ECFFF;
@@ -187,6 +197,12 @@ li {
 .gilde > .heading .text {
   height: 300px;
   width: 300px;
+}
+
+.gilde > .heading .subtext {
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 30px;
 }
 
 .gilde > .image-left .edge {
@@ -209,5 +225,29 @@ li {
 
 h1 {
   font-size: 15px;
+  font-kerning: normal;
   color: #D80000;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 15px;
+  color: #E6008E;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 15px;
+  color: #4ECFFF;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 15px;
+  color: black;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
 }
