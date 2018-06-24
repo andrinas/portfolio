@@ -6,7 +6,7 @@ html, body {
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 880px;
 }
 
 .container {
@@ -81,7 +81,7 @@ html, body {
   height: 600px;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1023px) { 
   .boxes-1 picture,
   .boxes-2 picture,
   .boxes-3 picture {
@@ -107,7 +107,7 @@ html, body {
   }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 767px) { 
   .wrapper,
   .parent {
     display: none;

@@ -1,0 +1,330 @@
+
+/* Images */
+
+* {
+  box-sizing: border-box;
+}
+  
+.column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+  
+.image-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.image-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+  
+/* Content */
+  
+.andere-welten > .heading {
+  position: relative;
+  z-index: 3;
+  top: 610px;
+  left: 800px;
+  height: 0px;
+  width: 0px;
+}
+  
+.andere-welten > .heading .edge {
+  height: 380px;
+  width: 300px;
+  background-color: white;
+  box-shadow: -5px -5px 10px -3px #D80000;
+  margin: 20px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.andere-welten > .heading .text {
+  height: 300px;
+  width: 300px;
+}
+  
+.andere-welten > .heading .subtext {
+  margin-left: 50px;
+  margin-right: -50px;
+  margin-top: 40px;
+}
+  
+.andere-welten > .image-left .edge {
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  box-shadow: -5px -5px 10px -3px #D80000;
+  margin: 20px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.andere-welten > .image-left img {
+  padding-left: 40px;
+  padding-top: 70px;
+  position: relative;
+}
+  
+.mmm > .heading {
+  position: relative;
+  z-index: 3;
+  top: 0px;
+  left: -100px;
+  height: 0px;
+  width: 0px;
+}
+  
+.mmm > .heading .edge {
+  height: 420px;
+  width: 320px;
+  background-color: white;
+  box-shadow: 5px 5px 10px -3px #E6008E;
+  margin-top: 30px;
+  margin-right: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.mmm > .heading .text {
+  height: 300px;
+  width: 300px;
+  padding-left: 20px;
+}
+  
+.mmm > .heading .subtext {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+}
+  
+.mmm > .image-right .edge {
+  height: 300px;
+  width: 800px;
+  background-color: white;
+  box-shadow: 5px 5px 10px -3px #E6008E;
+  margin-top: 420px;
+  margin-left: 190px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.mmm > .image-right img {
+  padding-right: 80px;
+}
+  
+.gilde > .heading {
+  position: relative;
+  z-index: 3;
+  top: 0px;
+  left: 800px;
+  height: 0px;
+  width: 0px;
+}
+  
+.gilde > .heading .edge {
+  height: 430px;
+  width: 300px;
+  background-color: white;
+  box-shadow: -5px 5px 10px -3px #4ECFFF;
+  margin: 15px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.gilde > .heading .text {
+  height: 300px;
+  width: 300px;
+}
+  
+.gilde > .heading .subtext {
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 30px;
+}
+
+.gilde > .image-left .edge {
+  height: 600px;
+  width: 200px;
+  background-color: white;
+  box-shadow: -5px 5px 10px -3px #4ECFFF;
+  margin-left: 20px;
+  margin-top: 150px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.gilde > .image-left img {
+  padding-left: 40px;
+  padding-top: 70px;
+}
+  
+/* Fonts */
+  
+h1 {
+  font-size: 15px;
+  font-kerning: normal;
+  color: #D80000;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+  
+h2 {
+  font-size: 15px;
+  color: #E6008E;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+  
+h3 {
+  font-size: 15px;
+  color: #4ECFFF;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+  
+h6 {
+  margin: 0;
+}
+  
+a {
+  font-size: 15px;
+  color: black;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+  
+@media screen and (max-width: 767px) { 
+  header,
+  section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { 
+  .wrapper {
+    max-width: 700px;
+  }
+
+  .andere-welten > .heading {
+    display: none;
+  }
+  .andere-welten > .image-left img {
+    padding-left: 30px;
+    padding-top: 35px;
+  }
+  .andere-welten > .image-left .edge {
+    height: 350px;
+  }
+
+  .mmm > .heading {
+    display: none;
+  }
+  .mmm > .image-right img {
+    padding-right: 30px;
+  }
+  .mmm > .image-right .edge {
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 600px;
+  }
+
+  .gilde > .heading {
+    display: none;
+  }
+  .gilde > .image-left img {
+    width: 100% !important;
+  }
+  .gilde > .image-left .edge {
+    margin-top: 0;
+    height: 500px;
+
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) { 
+  .wrapper {
+    max-width: 960px;
+  }
+
+  .image-left img,
+  .image-right img {
+    width: 80% !important;
+  }
+
+  .andere-welten > .heading {
+    top: 470px;
+    left: 610px;
+  }
+
+  .mmm > .heading {
+    left: 0px;
+    top: 50px;
+  }
+  .mmm > .image-right {
+    margin-top: 150px;
+  }
+  .mmm > .image-right img {
+    padding-right: 40px;
+  }
+  .mmm > .image-right .edge {
+    margin-top: 280px;
+    margin-left: 150px;
+  }
+
+  .gilde > .heading {
+    top: 40px;
+    left: 600px;
+  }
+  .gilde > .image-left .edge {
+    margin-top: 0;
+  } 
+}
+  
+@keyframes fadeInOut {
+  0% {
+    opacity:1;
+  }
+  22.2222% {
+    opacity:1;
+  }
+  33.3333% {
+    opacity:0;
+  }
+  88.8888% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+  
+.image.fading img {
+  animation-name: fadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+  
+.image.fading img:nth-of-type(1) {
+  animation-delay: 6s;
+  animation-duration: 9s;
+}
+.image.fading img:nth-of-type(2) {
+  animation-delay: 3s;
+  animation-duration: 9s;
+}
+.image.fading img:nth-of-type(3) {
+  animation-delay: 0s;
+  animation-duration: 9s;
+}
