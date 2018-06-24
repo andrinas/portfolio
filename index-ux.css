@@ -1,0 +1,20 @@
+html, body {
+  font-family: 'Pontano Sans', sans-serif;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  width: 100%;
+  background-color: #B164FF;
+  background-image: url("images/background-ux.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  background-position: center;
+  margin-top: 450px;
+
+}
+
+* {
+  box-sizing: border-box;
+}

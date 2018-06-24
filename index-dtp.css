@@ -10,6 +10,43 @@ html, body {
   overflow: inherit;
 }
 
+.header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+/* Navigation */
+
+.main-nav-rechts {
+  overflow: hidden;
+  font-size: 15px;
+  color: grey;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav-rechts ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  margin: 0px 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+  list-style: none;
+}
 
 .dtp {
   font-size: 150px;
