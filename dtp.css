@@ -1,0 +1,115 @@
+html, body {
+	font: inherit;
+	vertical-align: baseline;
+  width: 100%;
+  overflow: inherit;
+}
+
+.wrapper {
+  max-width: 1000px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  align-self: flex-start;
+}
+
+.title-text {
+  align-self: center;
+  width: 260px;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #003BFF;
+  margin: 0;
+}
+
+.dtp {
+  font-size: 150px;
+  color: #003BFF;
+  letter-spacing: 1px;
+  line-height: 140px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 60px;
+  color: #003BFF;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 150px;
+}
+
+.parent {
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 0px -5px 10px 3px #003BFF;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes-container {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.boxes-1,
+.boxes-2,
+.boxes-3 {
+  width: 100%;
+  display: flex;
+  margin-left: -250px;
+}
+
+.boxes-1 picture,
+.boxes-2 picture,
+.boxes-3 picture {
+  height: 600px;
+}
+
+@media screen and (max-width: 1024px) { 
+  .boxes-1 picture,
+  .boxes-2 picture,
+  .boxes-3 picture {
+    height: 350px;
+  }
+
+  .dtp {
+    font-size: 100px;
+    line-height: 90px;
+  }
+
+  .subtitle {
+    font-size: 40px;
+    margin-left: 60px;
+  }
+
+  .title-text {
+    padding-left: 18px;
+  }
+
+  .wrapper {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  .wrapper,
+  .parent {
+    display: none;
+  }
+}

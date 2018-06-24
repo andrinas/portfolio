@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="index.css"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="dtp.css"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="https://unpkg.com/aos@2.3.0/dist/aos.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <title>Portfolio Andrina</title>
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <div class="container">
+        <div class="title">
+          <div class="dtp">DTP</div>
+          <div class="subtitle">#agencylife</div>
+        </div>
+        <div class="title-text">
+          <h6>Sich im Rahmen der CD-Richtlinien bewegen. Dokumente richtig aufbauen und die Inhalte kontrollieren. Das alles zeichnet gute Reinzeichnungen aus.  </h6>
+        </div>
+      </div>
+    </section>
+
+    <section class="parent">
+      <div class="boxes-container">
+        <div class="boxes-1">
+          <picture>
+            <source srcset="images/brez-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/brez-ins-2-600.png" />
+            <img src="images/brez-ins-2-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/sbb-ins-3-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/sbb-ins-3-600.png" />
+            <img src="images/sbb-ins-3-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/bell-ins-1-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/bell-ins-1-600.png" />
+            <img src="images/bell-ins-1-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/mon-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/mon-ins-2-600.png" />
+            <img src="images/mon-ins-2-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/brez-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/brez-ins-2-600.png" />
+            <img src="images/brez-ins-2-600.png">
+          </picture>
+        </div>
+        <div class="boxes-2">
+          <picture>
+            <source srcset="images/sbb-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/sbb-ins-2-600.png" />
+            <img src="images/sbb-ins-2-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/app-ins-1-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/app-ins-1-600.png" />
+            <img src="images/app-ins-1-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/sbb-ins-5-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/sbb-ins-5-600.png" />
+            <img src="images/sbb-ins-5-600.png">
+          </picture>
+        </div>
+        <div class="boxes-3">
+          <picture>
+            <source srcset="images/bell-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/bell-ins-2-600.png" />
+            <img src="images/bell-ins-2-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/vwp-ins-1-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/vwp-ins-1-600.png" />
+            <img src="images/vwp-ins-1-600.png">
+          </picture>
+          <picture>            
+            <source srcset="images/brez-ins-3-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/brez-ins-3-600.png" />
+            <img src="images/brez-ins-3-600.png">
+          </picture>
+          <picture>
+            <source srcset="images/bell-ins-2-350.png" media="(max-width: 1024px)" />
+            <source srcset="images/bell-ins-2-600.png" />
+            <img src="images/bell-ins-2-600.png">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      function addAnimation(className, operator, yoffset, distance) {
+        var el = document.querySelector(className);
+        var fun = function() {
+          var scrollTop = $(window).scrollTop();
+          var elementOffset = $(el).offset().top;
+
+          var visibleFrom = scrollTop;
+          var visibleTo = $(window).height() + scrollTop;
+          var elementFrom = elementOffset + yoffset;
+          var elementTo = $(el).height() + elementOffset - yoffset;
+
+          var visible = visibleFrom < elementFrom && elementTo < visibleTo;
+          if (visible) {
+            var percentage = 100 / (visibleTo - visibleFrom) * (elementFrom - visibleFrom);
+            el.style.transform = 'translateX(' + operator + ((100 - percentage) * distance) + 'px)';
+          }
+        }
+          window.addEventListener('scroll', fun);
+          window.addEventListener('resize', fun);
+          window.addEventListener('load', fun);
+      }
+
+      addAnimation('.boxes-1', '-', 300, 3);
+      addAnimation('.boxes-2', '', 300, 3);
+      addAnimation('.boxes-3', '-', 300, 3);
+
+    </script>
+  </body>
+</html>
