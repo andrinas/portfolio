@@ -58,6 +58,7 @@
   margin-left: 50px;
   margin-right: -50px;
   margin-top: 40px;
+  color: #D80000;
 }
   
 .andere-welten > .image-left .edge {
@@ -106,6 +107,7 @@
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 50px;
+  color: #E6008E;
 }
   
 .mmm > .image-right .edge {
@@ -151,6 +153,7 @@
   margin-left: 40px;
   margin-right: 0px;
   margin-top: 30px;
+  color: #4ECFFF;
 }
 
 .gilde > .image-left .edge {
@@ -170,36 +173,10 @@
 }
   
 /* Fonts */
-  
-h1 {
+
+.subtext {
   font-size: 15px;
   font-kerning: normal;
-  color: #D80000;
-  letter-spacing: 0.8px;
-  line-height: 1.5;
-}
-  
-h2 {
-  font-size: 15px;
-  color: #E6008E;
-  letter-spacing: 0.8px;
-  line-height: 1.5;
-}
-  
-h3 {
-  font-size: 15px;
-  color: #4ECFFF;
-  letter-spacing: 0.8px;
-  line-height: 1.5;
-}
-  
-h6 {
-  margin: 0;
-}
-  
-a {
-  font-size: 15px;
-  color: black;
   letter-spacing: 0.8px;
   line-height: 1.5;
 }
@@ -211,13 +188,30 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) { 
+@media screen and (min-width: 767px) and (max-width: 1023px) { 
   .wrapper {
     max-width: 700px;
   }
 
+  .text > img {
+    width: 200px !important;
+  }
+  .andere-welten > .heading .subtext,
+  .mmm > .heading .subtext,
+  .gilde > .heading .subtext {
+    margin-top: 20px;
+  }
+  .subtext {
+    font-size: 13px;
+    width: 250px;
+  }
+
   .andere-welten > .heading {
-    display: none;
+    top: 370px;
+    left: 400px;
+  }
+  .andere-welten > .heading .edge {
+    height: 280px;
   }
   .andere-welten > .image-left img {
     padding-left: 30px;
@@ -228,7 +222,11 @@ a {
   }
 
   .mmm > .heading {
-    display: none;
+    left: -30px;
+  }
+  .mmm > .heading .edge {
+    height: 350px;
+    width: 280px;
   }
   .mmm > .image-right img {
     padding-right: 30px;
@@ -240,7 +238,10 @@ a {
   }
 
   .gilde > .heading {
-    display: none;
+    left: 400px;
+  }
+  .gilde > .heading .edge {
+    height: 300px;
   }
   .gilde > .image-left img {
     width: 100% !important;
@@ -268,7 +269,7 @@ a {
   }
 
   .mmm > .heading {
-    left: 0px;
+    left: -20px;
     top: 50px;
   }
   .mmm > .image-right {
