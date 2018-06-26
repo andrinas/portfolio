@@ -20,8 +20,6 @@ html, body {
   margin-right: auto;
 }
 
-/* Navigation */
-
 .main-nav-rechts {
   overflow: hidden;
   font-size: 15px;
@@ -55,4 +53,8 @@ a {
   letter-spacing: 0.8px;
   text-decoration: none;
   line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
 }

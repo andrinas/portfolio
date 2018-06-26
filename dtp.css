@@ -81,7 +81,15 @@ html, body {
   height: 600px;
 }
 
-@media screen and (max-width: 1023px) { 
+@media screen and (max-width: 767px) {
+  header,
+  .wrapper,
+  .parent {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) { 
   .boxes-1 picture,
   .boxes-2 picture,
   .boxes-3 picture {
@@ -104,12 +112,5 @@ html, body {
 
   .wrapper {
     max-width: 700px;
-  }
-}
-
-@media screen and (max-width: 767px) { 
-  .wrapper,
-  .parent {
-    display: none;
   }
 }
