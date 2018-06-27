@@ -28,6 +28,10 @@ body {
   margin-top: 100px;
 }
 
+.row.notion {
+  margin-top: 0px;
+}
+
 .notion-landingpage-link {
   position: relative;
   display: block;
@@ -86,11 +90,8 @@ body {
 
 .werner-lau {
   margin-left: 100px;
-}
-
-.werner-lau {
   margin-bottom: 0px;
-  height: 865px;
+  height: 765px;
 }
 
 .werner-lau > .heading {
@@ -115,17 +116,13 @@ body {
 }
 
 .werner-lau > .image .edge {
-  height: 865px;
+  height: 765px;
   margin-top: -40px;
   width: 10000px;
   background-color: white;
   box-shadow: -6px -5px 10px -3px #4DCEFF;
   position: absolute;
   z-index: -1;
-}
-  
-.werner-lau > .image img {
-  padding-right: 80px;
 }
 
 .website-frame {
@@ -152,5 +149,98 @@ body {
   header,
   section {
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) { 
+  .wrapper {
+    max-width: 700px;
+  }
+
+  .notion > .heading .edge {
+    height: 330px;
+    width: 250px;
+  }
+  .notion > .heading {
+    left: 440px;
+  }
+  .notion > .heading .text {
+    height: 200px;
+    width: 200px;
+  }
+  .notion > .heading .subtext {
+    font-size: 14px;
+  }
+  .notion > .heading .text img {
+    width: 200px !important;
+  }
+  .notion > .image .edge,
+  .notion > .image {
+    height: 388px;
+  }
+  
+  .werner-lau {
+    margin-left: 60px;
+  }
+  .werner-lau,
+  .werner-lau > .image .edge {
+    height: 480px;
+  }
+  .werner-lau > .image .edge {
+    margin-top: -20px;
+  }
+  .werner-lau > .heading .text {
+    font-size: 50px;
+    top: -55px;
+    left: 28px;
+  }
+  .werner-lau > .image {
+    height: unset;
+  }
+  .website-frame {
+    width: 620px;
+    height: 345px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .website-frame img {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) { 
+  .wrapper {
+    max-width: 960px;
+  }
+
+  .notion > .heading .edge {
+    height: 330px;
+    width: 250px;
+  }
+  .notion > .heading {
+    left: 700px;
+  }
+  .notion > .heading .text {
+    height: 250px;
+    width: 250px;
+  }
+  .notion > .image .edge,
+  .notion > .image {
+    height: 532px;
+  }
+
+  .werner-lau,
+  .werner-lau > .image .edge {
+    height: 620px;
+  }
+  .werner-lau > .image {
+    height: unset;
+  }
+  .website-frame {
+    width: 820px;
+    height: 456px;
+  }
+  .website-frame img {
+    width: 820px;
   }
 }
