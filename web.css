@@ -28,6 +28,23 @@ body {
   margin-top: 100px;
 }
 
+.notion-landingpage-link {
+  position: relative;
+  display: block;
+  left: -30px;
+  top: 100px;
+  height: 160px;
+  width: 160px;
+}
+
+.notion-landingpage-link .st0 {
+  transition: fill 1s;
+}
+
+.notion-landingpage-link:hover .st0 {
+  fill: #4DCEFF;
+}
+
 .notion > .heading {
   position: relative;
   z-index: 3;
@@ -85,33 +102,21 @@ body {
   width: 0px;
 }
   
-.werner-lau > .heading .edge {
-  height: 420px;
-  width: 320px;
-  background-color: white;
-  box-shadow: 5px 5px 10px -3px #4DCEFF;
-  margin-top: 30px;
-  margin-right: 30px;
-  position: absolute;
-  z-index: -1;
-}
-
 .werner-lau > .heading .text {
   height: 300px;
   width: 300px;
-  padding-left: 20px;
-}
-  
-.werner-lau > .heading .subtext {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 50px;
-  color: #E6008E;
+  font-family: 'Playfair Display';
+  font-size: 90px;
+  color: #4DCEFF;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 138px;
+  left: -25px;
 }
 
 .werner-lau > .image .edge {
   height: 865px;
-  margin-top: -20px;
+  margin-top: -40px;
   width: 10000px;
   background-color: white;
   box-shadow: -6px -5px 10px -3px #4DCEFF;
@@ -126,12 +131,14 @@ body {
 .website-frame {
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 765px;
-  margin-top: 20px;
+  height: 600px;
+  margin-top: 40px;
+  margin-left: 40px;
+  line-height: 0;
 }
 
-.website-frame .website-part {
-  height: 900px;
+.website-frame img {
+  margin: 0;
 }
 
 .subtext {
