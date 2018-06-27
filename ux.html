@@ -11,44 +11,62 @@
 </head>
 
 <body>
+  <header role="banner" class="page-head">
+    <div class="main-nav-rechts">
+      <ul>
+        <li><a href="./">Books</a></li>
+        <li><a href="./dtp.html">DTP</a></li>
+        <li><a href="./ux.html">UX</a></li>
+        <li><a href="./web.html">Web</a></li>
+      </ul>
+    </div>
+  </header>
+
   <section>
-    <header role="banner" class="page-head">
-      <div class="main-nav-rechts">
-        <ul>
-          <li><a href="./">Books</a></li>
-          <li><a href="./dtp.html">DTP</a></li>
-          <li><a href="./ux.html">UX</a></li>
-          <li><a href="./web.html">Web</a></li>
-        </ul>
-      </div>
-    </header>
-
     <div class="image-frame-container">
-
       <div class="image-frame-element">
         <div class="image-frame">
           <img src="images/Bilderrahmen.png" />
           <div class="image-legende">
-            Legende
+              <a class="button amnesty-yellow" href="./content/Amnesty.pdf" target="_blank">
+                Mehr
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
           </div>
           <video autoplay loop controls>
             <source src="images/Amnesty_Andrina_Mobile.mp4" type="video/mp4">
           </video>
         </div>
+        <div class="next-image">
+          <a onclick="$('html').animate({scrollLeft: $('.image-frame-container').width()}, {duration:2000})" href="#">
+            <span class="chevron right amnesty-yellow"></span>
+          </a>
+        </div>
       </div>
       <div class="image-frame-element">
         <div class="image-frame">
           <img src="images/Bilderrahmen.png" />
           <div class="image-legende">
-            Legende
+              <a class="button gymp-blue" href="./content/GYMB.pdf" target="_blank">
+                Mehr
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+              </a>
           </div>
           <video autoplay loop controls>
             <source src="images/GYMB_Andrina_Mobile.mp4" type="video/mp4">
           </video>
         </div>
+        <div class="previous-image">
+          <a onclick="$('html').animate({scrollLeft: 0}, {duration:2000})" href="#">
+            <span class="chevron left gymp-blue"></span>
+          </a>
+        </div>
       </div>
-
     </div>
   </section>
+
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
 </body>
 </html>
