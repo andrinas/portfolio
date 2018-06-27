@@ -1,0 +1,149 @@
+body {
+  background: repeating-linear-gradient(
+    -63.25deg,
+    transparent,
+    transparent 32px,
+    #b7b7b7 32px,
+    #b7b7b7 33px
+  );
+  overflow-x: hidden;
+}
+
+.column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  height: 665px;
+  background-color:white;
+}
+
+.row {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.notion > .heading {
+  position: relative;
+  z-index: 3;
+  top: -80px;
+  left: 890px;
+  height: 0px;
+  width: 0px;
+}
+
+.notion > .heading .edge {
+  height: 380px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 5px -5px 10px -3px #22FF55;
+  margin: 20px;
+  position: absolute;
+  z-index: -1;
+}
+  
+.notion > .heading .text {
+  height: 300px;
+  width: 300px;
+}
+  
+.notion > .heading .subtext {
+  margin-left: 50px;
+  margin-top: 40px;
+  color: #22FF55;
+}
+  
+.notion > .image .edge {
+  height: 665px;
+  width: 400px;
+  background-color: white;
+  box-shadow: -5px 5px 10px -3px #22FF55;
+  position: absolute;
+  z-index: -1;
+}
+
+.werner-lau {
+  margin-left: 100px;
+}
+
+.werner-lau {
+  margin-bottom: 0px;
+  height: 865px;
+}
+
+.werner-lau > .heading {
+  position: relative;
+  z-index: 3;
+  top: 0px;
+  left: -100px;
+  height: 0px;
+  width: 0px;
+}
+  
+.werner-lau > .heading .edge {
+  height: 420px;
+  width: 320px;
+  background-color: white;
+  box-shadow: 5px 5px 10px -3px #4DCEFF;
+  margin-top: 30px;
+  margin-right: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.werner-lau > .heading .text {
+  height: 300px;
+  width: 300px;
+  padding-left: 20px;
+}
+  
+.werner-lau > .heading .subtext {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+  color: #E6008E;
+}
+
+.werner-lau > .image .edge {
+  height: 865px;
+  margin-top: -20px;
+  width: 10000px;
+  background-color: white;
+  box-shadow: -6px -5px 10px -3px #4DCEFF;
+  position: absolute;
+  z-index: -1;
+}
+  
+.werner-lau > .image img {
+  padding-right: 80px;
+}
+
+.website-frame {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 765px;
+  margin-top: 20px;
+}
+
+.website-frame .website-part {
+  height: 900px;
+}
+
+.subtext {
+  font-size: 15px;
+  font-kerning: normal;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+  
+@media screen and (max-width: 767px) { 
+  header,
+  section {
+    display: none;
+  }
+}

@@ -47,7 +47,7 @@
   
 .andere-welten > .heading .subtext {
   margin-left: 50px;
-  margin-right: -50px;
+  margin-right: -40px;
   margin-top: 40px;
   color: #D80000;
 }
@@ -238,7 +238,6 @@
   .gilde > .image-left .edge {
     margin-top: 0;
     height: 500px;
-
   }
 }
 
